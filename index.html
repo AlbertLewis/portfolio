@@ -1,44 +1,83 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robotics Engineering Portfolio">
+    <title>Albert Lewis - Portfolio</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Albert Lewis</title>
 </head>
-
-<h1 class="title">Albert Lewis Portfolio</h1>
-
-<header>
-    <nav class="navigation-bar">
-            <a href="https://www.linkedin.com/in/albert-lewis"><img src="media/linkedin_icon.png" alt="LinkedIn" width="30" height= "30"></a>
-            <a href="https://github.com/AlbertLewis"><img src="media/github_icon.png" alt="Github" width="30" height= "30"></a>
-    </nav>
-</header>
 <body>
+    <header>
+        <div class="header-container">
+            <div class="header-title">
+                <h1>Albert Lewis Portfolio</h1>
+                <h3>Robotics Engineer</h2>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div>
-        <h1 style="font-size: 50px; margin-bottom: 0px;">Albert Lewis</h1>
-        <h1 style="font-size: 40px; margin-top: 0px;">Robotics Software Engineer</h1>
-        <h1 style="font-size: 40pt;"></h1>
-    </div>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                <strong>Hi! I'm Albert, a student at <a href="https://wpi.edu">Worcester Polytechnic Institute</a> (WPI).
+                I am currently pursuing a B.S. and M.S. in Robotics Engineering with a Minor in Computer Science. </strong><br>
+                My interests are mainly in Artificial Intelligence, Controls, and Motion Planning, 
+                but I most enjoy myself when I am put in situations where I can tackle complex challenges, work in a team environment, acquire new skills and broaden my horizons.
+                Although my interests are software oriented, I also love working with mechanical and electrical systems as seen from my projects below.
+            </p>
+            <p>
+                Outside of working, some of my hobbies include playing soccer, cooking, playing the violin, working out, and playing with cats.
+            </p>
+            <p>
+                If you have any inquiries, please feel free to <strong><a href="#contact">contact</a></strong>!
+            </p>
+        </div>
+    </section>
 
-    <div class="bio">
-        <p\>Hi! I'm Albert, a student at Worcester Polytechnic Institute (WPI). 
-            I am currently pursuing a B.S. and M.S. in Robotics Engineering with a Minor in Computer Science.
-            My interests are in Artificial Intelligence, Controls, Motion Planning, and 3D printing, 
-            but I most enjoy my work when I am put in situations where I can tackle complex challenges, work in a team environment,
-            and acquire new skills and broaden my horizons.
-        </p>
-        <p>Outside of work, I love playing soccer, playing the violin, as well as exercising and playing with cats </p>
-    </div>
-    <h1>Projects</h1>
-    <div class="projects-container">
-        <div class="project"> UAV-UGV Collaboration</div>
-        <div class="project"> 3DOF Robotic Sorting Arm</div>
-        <div class="project"> Escape Room Robots</div>
-        <div class="project"> Four-Bar Robot</div>
-        <div class="project"> 3D Printer</div>
-        <div class="project"><a href="https://digital.wpi.edu/concern/student_works/sq87c011f?locale=en"></a> Capacity Development for Romanian Heritage Revitalization NGOs</div>
-    </div>
+    <section id="experience" class="section">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-cards" id="project-container">
+                <!-- Project cards will be added here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/albert-lewis/" target="_blank"><img src="media/linkedin_icon.png" alt="LinkedIn" width="50" height="50"></a>
+                <a href="https://github.com/AlbertLewis" target="_blank"><img src="media/github_icon.png" alt="Github" width="50" height="50"></a>
+                <a href="mailto:albertlewiscontact@gmail.com"><img src="media/gmail_icon.png" alt="Email" width="55" height="55"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Albert Lewis. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
-
+</html>
