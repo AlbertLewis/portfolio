@@ -35,16 +35,17 @@ function createProjectCard(title, description, imageUrl, projectLink, skills, pr
     const projectContainer = document.getElementById('project-container');
     projectContainer.appendChild(projectCard);
 
+    // TODO generate a new webpage for each project card and have them be linked to it
+    // var opened = window.open("projects/uav_ugv_collaboration.html");
+    // opened.document.write("<html><head><title>MyTitle</title></head><body>test</body></html>");
+
 }
 
-
-// Example usage:
 // Calling the function to add project cards dynamically
-
 createProjectCard(
     "UAV-UGV Collaboration",
     "A system that allows a quadcopter to autonomously dock and charge on a UGV reliably; in partnership with Draper Laboratory.",
-    "media/drone.jpg", 
+    "media/UAV_UGV.jpg", 
     "https://github.com/your-github/repo2",
     ["Solidworks", "3D Printing", "C++", "Embedded Systems", "Computer Vision", "Ardupilot"]
 );
@@ -52,7 +53,7 @@ createProjectCard(
 createProjectCard(
     "3-DOF Robotic Sorting Arm",
     "A 3-DOF robot arm, programmed to pick up and sort colored balls that were placed into its workspace.",
-    "media/robot-arm.jpg", 
+    "media/color_sorting_robotic_arm.gif", 
     "https://github.com/your-github/repo1",
     ["MATLAB", "Forward/Inverse Kinematics", "Trajectory Generation", "Stereo Calibration"]
 );
