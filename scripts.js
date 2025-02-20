@@ -45,7 +45,7 @@ function createProjectCard(title, description, imageUrl, projectLink, skills, pr
 createProjectCard(
     "UAV-UGV Collaboration",
     "A system that allows a quadcopter to autonomously dock and charge on a UGV reliably; in partnership with Draper Laboratory.",
-    "media/UAV_UGV.jpg", 
+    "media/projects/UAV_UGV.jpg", 
     "https://github.com/your-github/repo2",
     ["Solidworks", "3D Printing", "C++", "Embedded Systems", "Computer Vision", "Ardupilot"]
 );
@@ -53,7 +53,7 @@ createProjectCard(
 createProjectCard(
     "3-DOF Robotic Sorting Arm",
     "A 3-DOF robot arm, programmed to pick up and sort colored balls that were placed into its workspace.",
-    "media/color_sorting_robotic_arm.gif", 
+    "media/projects/color_sorting_robotic_arm.gif", 
     "https://github.com/your-github/repo1",
     ["MATLAB", "Forward/Inverse Kinematics", "Trajectory Generation", "Stereo Calibration"]
 );
@@ -61,7 +61,7 @@ createProjectCard(
 createProjectCard(
     "Escape Room Robots",
     "A set of 3 robots with unique sets of sensors that communicate with each other and find clues to exit an escape room.",
-    "media/drone.jpg", 
+    "media/projects/escape_room_robots.gif", 
     "https://github.com/your-github/repo2",
     ["C++", "Sensor Integration", "IMU", "PID Control", "MQTT", "OpenMV"]
 );
@@ -69,7 +69,7 @@ createProjectCard(
 createProjectCard(
     "Solar Panel Pick and Place Robot",
     "Designed and 3D printed a four-bar mechanism on a robot that would pick up \"solar panels\" and place them on the tops of miniature roofs",
-    "media/drone.jpg", 
+    "media/projects/solar_panel_robot.gif", 
     "https://github.com/your-github/repo2",
     ["Solidworks", "3D Printing", "C++", "Servos", "Power Transmission", "Static Force Analysis"]
 );
@@ -77,7 +77,7 @@ createProjectCard(
 createProjectCard(
     "Hospital Kiosk Application",
     "Lead a team of 11 students to design a kiosk application for workers at Brigham and Women\’s Hospital in Boston",
-    "media/drone.jpg",
+    "media/projects/.jpg",
     "https://github.com/your-github/repo2",
     ["Java", "Agile", "Scrum", "Jira", "Git", "SQL"]
 );
@@ -85,7 +85,7 @@ createProjectCard(
 createProjectCard(
     "Custom Built 3D Printer",
     "A Voron 2.4 FDM 3D printer, built using individually sourced components from professional suppliers",
-    "media/drone.jpg",
+    "media/projects/.jpg",
     "https://github.com/your-github/repo2",
     ["Raspberry Pi", "PrusaSlicer", "AC/DC circuits", "Soldering", "Wiring", "Mechanical Assembly", "Solidworks", "Fusion 360"]
 );
