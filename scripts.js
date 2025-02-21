@@ -77,15 +77,15 @@ createProjectCard(
 createProjectCard(
     "Hospital Kiosk Application",
     "Lead a team of 11 students to design a kiosk application for workers at Brigham and Women\’s Hospital in Boston",
-    "media/projects/.jpg",
+    "media/projects/brigham_and_womens_hospital.jpeg",
     "https://github.com/your-github/repo2",
-    ["Java", "Agile", "Scrum", "Jira", "Git", "SQL"]
+    ["Java", "Agile", "Scrum", "Jira", "UML", "Git", "SQL"]
 );
 
 createProjectCard(
     "Custom Built 3D Printer",
     "A Voron 2.4 FDM 3D printer, built using individually sourced components from professional suppliers",
-    "media/projects/.jpg",
+    "media/projects/3D_printer.jpg",
     "https://github.com/your-github/repo2",
     ["Raspberry Pi", "PrusaSlicer", "AC/DC circuits", "Soldering", "Wiring", "Mechanical Assembly", "Solidworks", "Fusion 360"]
 );
