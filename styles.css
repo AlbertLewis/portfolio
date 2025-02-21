@@ -1,52 +1,25 @@
 /* General reset and font */
 
 :root {
-
-    /* Very good */
-    /* --dark-blue:#FAEBEF; 
-    --beige: #333D79; */
-
-    /* Alright red and beige
-    --dark-blue: #FFDFB9;
-    --beige: #A4193D; */
-
-
-    /* Very good
-    --dark-blue: #101820;
-    --beige: #02343F; */
-
-    /* Not bad funky monky
-    --dark-blue: #ADEFD1;
-    --beige: #00203F; */
-
-    /* nice gray */
-    --dark-blue: #DCE2F0; 
-    --beige: #50586C; 
-
-    /* decent brown */
-    /* --dark-blue: #F2EDD7;
-    --beige: #755139; */
-
-    /* Alright */
-    /* --dark-blue: #D7C49E;
-    --beige: #343148; */
-
     /* Black and white is very nice */
-    --dark-blue: #f0f0f0ec;
-    --beige: #0f0f0fec;
-
-    
+    --primary_color: #f0f0f0ec;
+    --secondary-color: #0e0e0eec;
   }
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;  /* Montserrat font for modern look */
+    font-family: 'Montserrat', sans-serif;
+    font-family: "Red Hat Display", serif;
+
 }
 
+
 body {
-    background-color: var(--dark-blue);
-    color: var(--beige);
+    background-color: var(--primary_color);
+    color: var(--secondary-color);
     line-height: 1.6;
 }
 
@@ -58,14 +31,23 @@ body {
 
 /* Header container with space between title and navbar */
 .header-container {
+
+    background-image: url("./media/banner_shortened._slightlyPNG.PNG");
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 450px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.65);
+
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;  /* Add horizontal padding (20% of the width) */
-    background-color: var(--beige);
-    color: var(--dark-blue);
-    border-bottom: px solid var(--beige);
-    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary_color);
+    border-bottom: px solid var(--secondary-color);
+    margin-bottom: 40px;
+
 }
 
 .header-title {
@@ -73,6 +55,7 @@ body {
 }
 
 .header-title h1 {
+    text-shadow: 2px 2px #f0f0f05a;
     font-size: 2.8em;
     margin-bottom: 10px;
 }
@@ -94,15 +77,16 @@ body {
 }
 
 .navbar ul li a {
-    color: var(--dark-blue);
+    color: white;
+    text-shadow: 1px 1px #f0f0f05a;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.4em;
     transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: var(--beige);
+    color: #f0f0f05a;
 }
 
 /* Section styling */
@@ -114,7 +98,8 @@ h2 {
     text-align: center;
     font-size: 2.3em;
     margin-bottom: 20px;
-    color: var(--beige);
+    color: var(--secondary-color);
+    text-shadow: 2px 2px #0e0e0e48;
 }
 
 /* Project card styling */
@@ -126,8 +111,8 @@ h2 {
 }
 
 .project-card {
-    background-color: var(--beige);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
     padding: 25px;
     width: 300px;
     height: 400px; /* Fixed height */
@@ -142,7 +127,7 @@ h2 {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
@@ -164,9 +149,10 @@ h2 {
 }
 
 .project-card h3 {
+    text-shadow: 1px 1px #f0f0f05a;
     margin-bottom: 15px;
     font-size: 1.8em;
-    color: var(--dark-blue);
+    color: var(--primary_color);
 }
 
 /* Initially, the text is visible */
@@ -186,7 +172,7 @@ h2 {
 .project-card p {
     font-size: 1.1em;
     margin-bottom: 15px;
-    color: var(--dark-blue);
+    color: var(--primary_color);
 }
 
 /* Styling for the skills paragraph */
@@ -198,7 +184,7 @@ h2 {
 /* Styling for the bolded skills */
 .skills strong {
     font-weight: bold;
-    color: var(--dark-blue); /* Highlight the skills with a different color */
+    color: var(--primary_color); /* Highlight the skills with a different color */
     font-size: 0.8em;  /* Ensure bolded skills are also smaller */
 }
 
@@ -219,16 +205,16 @@ h2 {
 }
 
 .social-links a:hover {
-    color: var(--beige);
+    color: var(--secondary-color);
 }
 
 /* Footer styling */
 footer {
-    background-color: var(--beige);
-    color: var(--dark-blue);
+    background-color: var(--secondary-color);
+    color: var(--primary_color);
     text-align: center;
     margin-top: 30px;
-    border-top: 4px solid var(--beige);
+    border-top: 4px solid var(--secondary-color);
 }
 
 footer p {
