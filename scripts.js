@@ -76,7 +76,7 @@ createProjectCard(
 
 createProjectCard(
     "Hospital Kiosk Application",
-    "Lead a team of 11 students to design a kiosk application for workers at Brigham and Women\’s Hospital in Boston",
+    "Led a team of 11 students to design a kiosk application for workers at Brigham and Women\’s Hospital in Boston",
     "media/projects/brigham_and_womens_hospital.jpeg",
     "https://github.com/your-github/repo2",
     ["Java", "Agile", "Scrum", "Jira", "UML", "Git", "SQL"]
