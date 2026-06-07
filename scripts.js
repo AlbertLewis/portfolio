@@ -1,44 +1,52 @@
-// Function to generate a project card with skills as bolded text in a paragraph
+// ---------- Theme toggle ----------
+// The header is injected asynchronously, so use event delegation on the
+// document to catch clicks on the toggle button whenever it appears.
+document.addEventListener('click', function (e) {
+    if (e.target.closest('#theme-toggle')) {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+    }
+});
+
+// ---------- Project cards ----------
+// Builds a card with a full-bleed image and an overlay that reveals the
+// description and skill tags on hover.
 function createProjectCard(title, description, imageUrl, projectLink, skills, projectId, videoUrl) {
-    // Create the project card container
     const projectCard = document.createElement('a');
-    projectCard.href = `#${projectId}`; // Set the link for the project to simulate a subpage
-    projectCard.classList.add('project-card'); // Add class for styling
-    projectCard.dataset.projectId = projectId; // Store the project ID for later use
+    projectCard.href = projectId ? `#${projectId}` : (projectLink || '#');
+    projectCard.classList.add('project-card');
+    if (projectId) projectCard.dataset.projectId = projectId;
 
-    // Create the project title element
-    const projectTitle = document.createElement('h3');
-    projectTitle.innerText = title;
-
-    // Create the project description element
-    const projectDescription = document.createElement('p');
-    projectDescription.innerText = description;
-
-    // Create the skills paragraph
-    const skillsParagraph = document.createElement('p');
-    skillsParagraph.classList.add('skills'); // Add class for styling
-    skillsParagraph.innerHTML = skills.map(skill => `<strong>${skill}</strong>`).join(', '); // Bold and separate skills by commas
-
-    // Create the image element
     const projectImage = document.createElement('img');
     projectImage.src = imageUrl;
     projectImage.alt = title;
-    projectImage.classList.add('project-image'); // Add class for styling
+    projectImage.loading = 'lazy';
+    projectImage.classList.add('project-image');
 
-    // Append the title, description, skills, and image to the card
-    projectCard.appendChild(projectTitle);
-    projectCard.appendChild(projectDescription);
-    projectCard.appendChild(skillsParagraph);
+    const overlay = document.createElement('div');
+    overlay.classList.add('project-overlay');
+
+    const projectTitle = document.createElement('h3');
+    projectTitle.innerText = title;
+
+    const projectDescription = document.createElement('p');
+    projectDescription.classList.add('project-desc');
+    projectDescription.innerText = description;
+
+    const skillsWrap = document.createElement('div');
+    skillsWrap.classList.add('skills');
+    skillsWrap.innerHTML = skills.map(skill => `<span>${skill}</span>`).join('');
+
+    overlay.appendChild(projectTitle);
+    overlay.appendChild(projectDescription);
+    overlay.appendChild(skillsWrap);
+
     projectCard.appendChild(projectImage);
+    projectCard.appendChild(overlay);
 
-    // Append the project card to the project container
-    const projectContainer = document.getElementById('project-container');
-    projectContainer.appendChild(projectCard);
-
-    // TODO generate a new webpage for each project card and have them be linked to it
-    // var opened = window.open("projects/uav_ugv_collaboration.html");
-    // opened.document.write("<html><head><title>MyTitle</title></head><body>test</body></html>");
-
+    document.getElementById('project-container').appendChild(projectCard);
 }
 
 // Calling the function to add project cards dynamically
