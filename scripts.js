@@ -23,7 +23,7 @@ const PROJECTS = [
         description: "A system that allows a quadcopter to autonomously dock and charge on a UGV reliably; in partnership with Draper Laboratory.",
         details: "A system that allows a quadcopter to autonomously dock and charge on a UGV (unmanned ground vehicle) reliably, developed in partnership with Draper Laboratory. The work spanned mechanical design, embedded firmware, and a computer-vision pipeline for precision landing.",
         skills: ["Solidworks", "3D Printing", "C++", "Embedded Systems", "Computer Vision", "Ardupilot"],
-        links: []
+        links: [{ label: "Link to Paper", url: "https://digital.wpi.edu/concern/student_works/w6634816k?locale=en" }]
     },
     {
         title: "3-DOF Robotic Sorting Arm",
